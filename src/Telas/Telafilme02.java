@@ -6,7 +6,13 @@
 package Telas;
 
 import java.awt.Color;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javax.swing.JOptionPane;
+import javazoom.jl.decoder.JavaLayerException;
+import javazoom.jl.player.Player;
 
 /**
  *
@@ -15,6 +21,51 @@ import javax.swing.JOptionPane;
 public class Telafilme02 extends javax.swing.JFrame {
 
     int pontos,erros;
+
+    public void Acertou() throws FileNotFoundException, JavaLayerException{
+                try {
+                FileInputStream in;
+                //Inicializa o FileInputStream com o indereço do arquivo pra tocar
+                in = new FileInputStream("sons\\acertou.mp3");
+
+                //Cria uma instancia de classe player passando pra ele o    InputStream do arquivo
+                Player p = new Player (in);
+
+                //executa o som
+                p.play();
+
+        }catch (FileNotFoundException | JavaLayerException e) {
+            e.printStackTrace();
+        }
+        }
+
+        /**
+         *
+         * @throws FileNotFoundException
+         * @throws JavaLayerException
+         */
+            public void Errou() throws FileNotFoundException, JavaLayerException{
+                    try {
+                    FileInputStream in;
+                    //Inicializa o FileInputStream com o indereço do arquivo pra tocar
+                    in = new FileInputStream("sons\\errou_8.mp3");
+
+                    //Cria uma instancia de classe player passando pra ele o    InputStream do arquivo
+                    Player p = new Player (in);
+
+                    //executa o som
+                    p.play();
+
+            }catch (FileNotFoundException | JavaLayerException e) {
+                e.printStackTrace();
+            }
+            }
+  
+
+
+
+
+
     
     public Telafilme02() {
             initComponents();
@@ -249,11 +300,30 @@ public class Telafilme02 extends javax.swing.JFrame {
             
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            try {
+                //Acertou
+                Acertou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
         }else{
             txts.setBackground(Color.RED);
             txts.setText(null);
             txts.requestFocus();
+            
+            try {
+                //Errou
+                Errou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
         }
 
     }//GEN-LAST:event_txtsKeyReleased
@@ -273,11 +343,30 @@ public class Telafilme02 extends javax.swing.JFrame {
             
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            try {
+                //Acertou
+                Acertou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
         }else{
             txth.setBackground(Color.RED);
             txth.setText(null);
             txth.requestFocus();
+            
+            try {
+                //Errou
+                Errou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
         }
     }//GEN-LAST:event_txthKeyReleased
 
@@ -296,11 +385,30 @@ public class Telafilme02 extends javax.swing.JFrame {
             
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            try {
+                //Acertou
+                Acertou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
         }else{
             txtr.setBackground(Color.RED);
             txtr.setText(null);
             txtr.requestFocus();
+            
+            try {
+                //Errou
+                Errou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
         }
     }//GEN-LAST:event_txtrKeyReleased
 
@@ -319,11 +427,30 @@ public class Telafilme02 extends javax.swing.JFrame {
             
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            try {
+                //Acertou
+                Acertou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
         }else{
             txte.setBackground(Color.RED);
             txte.setText(null);
             txte.requestFocus();
+            
+            try {
+                //Errou
+                Errou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
         }
     }//GEN-LAST:event_txteKeyReleased
 
@@ -339,6 +466,15 @@ public class Telafilme02 extends javax.swing.JFrame {
             
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            try {
+                //Acertou
+                Acertou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
 
             JOptionPane.showMessageDialog(null, "Parabénsss, você acertou o nome do filme!! :)");
 
@@ -346,6 +482,16 @@ public class Telafilme02 extends javax.swing.JFrame {
             txtk.setBackground(Color.RED);
             txtk.setText(null);
             txtk.requestFocus();
+            
+            try {
+                //Errou
+                Errou();
+            } catch (FileNotFoundException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            } catch (JavaLayerException ex) {
+                Logger.getLogger(Telafilme01.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            
         }
     }//GEN-LAST:event_txtkKeyReleased
 
