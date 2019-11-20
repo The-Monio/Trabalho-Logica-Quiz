@@ -50,6 +50,7 @@ public class Telafilme09 extends javax.swing.JFrame {
         txtc = new javax.swing.JFormattedTextField();
         txti = new javax.swing.JFormattedTextField();
         txtt = new javax.swing.JFormattedTextField();
+        btnp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -162,14 +163,19 @@ public class Telafilme09 extends javax.swing.JFrame {
             }
         });
 
+        btnp.setBackground(new java.awt.Color(255, 0, 0));
+        btnp.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        btnp.setText("Proximo");
+        btnp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(211, 211, 211))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(148, 148, 148)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -204,6 +210,15 @@ public class Telafilme09 extends javax.swing.JFrame {
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(lblpontos)
                 .addGap(51, 51, 51))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(211, 211, 211))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                        .addComponent(btnp)
+                        .addContainerGap())))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -234,7 +249,9 @@ public class Telafilme09 extends javax.swing.JFrame {
                     .addComponent(txtt2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(47, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
+                .addComponent(btnp)
+                .addContainerGap())
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -426,6 +443,9 @@ public class Telafilme09 extends javax.swing.JFrame {
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
             
+            //Botão que chama a proxima tela
+            btnp.setVisible(true);
+            
             JOptionPane.showMessageDialog(null, "Parabénsss, você acertou o nome do filme!! :)");
            
         }
@@ -448,7 +468,13 @@ public class Telafilme09 extends javax.swing.JFrame {
       txtn.setVisible(false);
       txti2.setVisible(false);
       txtc.setVisible(false);
+      btnp.setVisible(false);
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpActionPerformed
+        Telafilme10 tela10 = new Telafilme10();
+        tela10.setVisible(true);
+    }//GEN-LAST:event_btnpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -485,6 +511,7 @@ public class Telafilme09 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel4;

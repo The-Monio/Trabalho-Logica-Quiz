@@ -48,6 +48,7 @@ public class Telafilme01 extends javax.swing.JFrame {
         txtk = new javax.swing.JFormattedTextField();
         txto = new javax.swing.JFormattedTextField();
         txtj = new javax.swing.JFormattedTextField();
+        btnp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         addWindowListener(new java.awt.event.WindowAdapter() {
@@ -152,6 +153,15 @@ public class Telafilme01 extends javax.swing.JFrame {
             }
         });
 
+        btnp.setBackground(new java.awt.Color(255, 0, 0));
+        btnp.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 18)); // NOI18N
+        btnp.setText("Proximo");
+        btnp.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnpActionPerformed(evt);
+            }
+        });
+
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
@@ -193,6 +203,10 @@ public class Telafilme01 extends javax.swing.JFrame {
                                 .addComponent(txtr, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE)
                                 .addGap(0, 0, Short.MAX_VALUE)))))
                 .addGap(37, 37, 37))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(btnp)
+                .addGap(19, 19, 19))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -218,7 +232,9 @@ public class Telafilme01 extends javax.swing.JFrame {
                     .addComponent(txtk, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txte, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(txtr, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(0, 53, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(btnp)
+                .addContainerGap(19, Short.MAX_VALUE))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -248,6 +264,9 @@ public class Telafilme01 extends javax.swing.JFrame {
 
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
+            
+            //Botão que chama a proxima tela
+            btnp.setVisible(true);
 
             JOptionPane.showMessageDialog(null, "Parabénsss, você acertou o nome do filme!! :)");
 
@@ -392,7 +411,14 @@ public class Telafilme01 extends javax.swing.JFrame {
       txtk.setVisible(false);
       txte.setVisible(false);
       txtr.setVisible(false);
+      btnp.setVisible(false);
+      
     }//GEN-LAST:event_formWindowOpened
+
+    private void btnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpActionPerformed
+         Telafilme02 tela02 = new Telafilme02();
+        tela02.setVisible(true);
+    }//GEN-LAST:event_btnpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -430,6 +456,7 @@ public class Telafilme01 extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JButton btnp;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
