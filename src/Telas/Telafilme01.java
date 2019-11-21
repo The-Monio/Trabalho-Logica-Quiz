@@ -248,7 +248,7 @@ public class Telafilme01 extends javax.swing.JFrame {
             txtr.requestFocus();
             
             
-            lblvida1.setVisible(false);
+            
             
             
             

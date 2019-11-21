@@ -60,6 +60,11 @@ public class Telafilme06 extends javax.swing.JFrame {
         btnp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowOpened(java.awt.event.WindowEvent evt) {
+                formWindowOpened(evt);
+            }
+        });
 
         jPanel1.setBackground(new java.awt.Color(0, 0, 0));
 
@@ -359,7 +364,6 @@ public class Telafilme06 extends javax.swing.JFrame {
                         .addGap(20, 20, 20)
                         .addComponent(jLabel6))
                     .addComponent(lblpontos))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -388,7 +392,7 @@ public class Telafilme06 extends javax.swing.JFrame {
                             .addComponent(txtl2, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(txtm3, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addContainerGap(39, Short.MAX_VALUE))
+                        .addContainerGap(54, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(btnp)
@@ -403,7 +407,7 @@ public class Telafilme06 extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
         );
 
         pack();
@@ -924,6 +928,27 @@ public class Telafilme06 extends javax.swing.JFrame {
         Telafilme07 tela07 = new Telafilme07();
         tela07.setVisible(true);
     }//GEN-LAST:event_btnpActionPerformed
+
+    private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
+        //Esconder os Campos de Texto
+      txtm.setVisible(false);
+      txta.setVisible(false);
+      txtl.setVisible(false);
+      txta2.setVisible(false);
+      txtd.setVisible(false);
+      txtr.setVisible(false);
+      txta3.setVisible(false);
+      txts.setVisible(false);
+      txte.setVisible(false);
+      txtm2.setVisible(false);
+      txtl2.setVisible(false);
+      txti.setVisible(false);
+      txtm3.setVisible(false);
+      txti2.setVisible(false);
+      txtt.setVisible(false);
+      txte2.setVisible(false);
+      txts2.setVisible(false);
+    }//GEN-LAST:event_formWindowOpened
 
     /**
      * @param args the command line arguments

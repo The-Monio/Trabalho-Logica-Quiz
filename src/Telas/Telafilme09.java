@@ -1,4 +1,8 @@
-
+/*
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ */
 package Telas;
 
 import java.awt.Color;
@@ -35,13 +39,13 @@ public class Telafilme09 extends javax.swing.JFrame {
         jLabel6 = new javax.swing.JLabel();
         lblpontos = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
-        txti2 = new javax.swing.JFormattedTextField();
-        txtn = new javax.swing.JFormattedTextField();
-        txta = new javax.swing.JFormattedTextField();
-        txtt2 = new javax.swing.JFormattedTextField();
-        txtc = new javax.swing.JFormattedTextField();
-        txti = new javax.swing.JFormattedTextField();
         txtt = new javax.swing.JFormattedTextField();
+        txti = new javax.swing.JFormattedTextField();
+        txtt2 = new javax.swing.JFormattedTextField();
+        txta = new javax.swing.JFormattedTextField();
+        txtn = new javax.swing.JFormattedTextField();
+        txti2 = new javax.swing.JFormattedTextField();
+        txtc = new javax.swing.JFormattedTextField();
         btnp = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -69,57 +73,13 @@ public class Telafilme09 extends javax.swing.JFrame {
         jLabel2.setText("jLabel2");
 
         try {
-            txti2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+            txtt.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        txti2.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtt.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txti2KeyReleased(evt);
-            }
-        });
-
-        try {
-            txtn.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtn.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtnKeyReleased(evt);
-            }
-        });
-
-        try {
-            txta.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txta.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtaKeyReleased(evt);
-            }
-        });
-
-        try {
-            txtt2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtt2.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtt2KeyReleased(evt);
-            }
-        });
-
-        try {
-            txtc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
-        } catch (java.text.ParseException ex) {
-            ex.printStackTrace();
-        }
-        txtc.addKeyListener(new java.awt.event.KeyAdapter() {
-            public void keyReleased(java.awt.event.KeyEvent evt) {
-                txtcKeyReleased(evt);
+                txttKeyReleased(evt);
             }
         });
 
@@ -135,13 +95,57 @@ public class Telafilme09 extends javax.swing.JFrame {
         });
 
         try {
-            txtt.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+            txtt2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
         } catch (java.text.ParseException ex) {
             ex.printStackTrace();
         }
-        txtt.addKeyListener(new java.awt.event.KeyAdapter() {
+        txtt2.addKeyListener(new java.awt.event.KeyAdapter() {
             public void keyReleased(java.awt.event.KeyEvent evt) {
-                txttKeyReleased(evt);
+                txtt2KeyReleased(evt);
+            }
+        });
+
+        try {
+            txta.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txta.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtaKeyReleased(evt);
+            }
+        });
+
+        try {
+            txtn.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txtn.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtnKeyReleased(evt);
+            }
+        });
+
+        try {
+            txti2.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txti2.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txti2KeyReleased(evt);
+            }
+        });
+
+        try {
+            txtc.setFormatterFactory(new javax.swing.text.DefaultFormatterFactory(new javax.swing.text.MaskFormatter("U")));
+        } catch (java.text.ParseException ex) {
+            ex.printStackTrace();
+        }
+        txtc.addKeyListener(new java.awt.event.KeyAdapter() {
+            public void keyReleased(java.awt.event.KeyEvent evt) {
+                txtcKeyReleased(evt);
             }
         });
 
@@ -159,64 +163,69 @@ public class Telafilme09 extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(148, 148, 148)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(44, 44, 44)
-                        .addComponent(txtt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtt2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txti2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(125, Short.MAX_VALUE))
+                .addGap(367, 367, 367)
+                .addComponent(jLabel6)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(lblpontos)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(211, 211, 211))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(btnp)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(lblpontos)
-                        .addGap(327, 327, 327))))
+                .addContainerGap(251, Short.MAX_VALUE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 323, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(207, 207, 207))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(591, 591, 591)
+                    .addComponent(btnp)
+                    .addContainerGap(85, Short.MAX_VALUE))
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(168, 168, 168)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 501, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(jPanel1Layout.createSequentialGroup()
+                            .addGap(44, 44, 44)
+                            .addComponent(txtt, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtt2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtn, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txti2, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                            .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 46, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(13, 13, 13)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addComponent(jLabel6)
-                        .addGap(20, 20, 20))
-                    .addComponent(lblpontos))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jLabel2)
-                .addGap(29, 29, 29)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txti2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtt2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 7, Short.MAX_VALUE)
-                .addComponent(btnp)
-                .addContainerGap())
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addComponent(lblpontos))
+                    .addGroup(jPanel1Layout.createSequentialGroup()
+                        .addGap(29, 29, 29)
+                        .addComponent(jLabel6)))
+                .addContainerGap(483, Short.MAX_VALUE))
+            .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(jPanel1Layout.createSequentialGroup()
+                    .addGap(138, 138, 138)
+                    .addComponent(jLabel2)
+                    .addGap(29, 29, 29)
+                    .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(txti2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtc, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtn, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txta, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtt2, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txti, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addComponent(txtt, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                    .addComponent(btnp)
+                    .addContainerGap()))
         );
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -236,197 +245,200 @@ public class Telafilme09 extends javax.swing.JFrame {
     private void txttKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txttKeyReleased
         //Verificar se o usuariio digiou a letra T
         if(txtt.getText().equals("T")){
-            
+
             //Muda cor de fundo da caixa de texto
             txtt.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txti.setVisible(true);
             txti.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txtt.setBackground(Color.RED);
             txtt.setText(null);
             txtt.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txttKeyReleased
 
     private void txtiKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtiKeyReleased
         //Verificar se o usuariio digiou a letra I
         if(txti.getText().equals("I")){
-            
+
             //Muda cor de fundo da caixa de texto
             txti.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txtt2.setVisible(true);
             txtt2.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txti.setBackground(Color.RED);
             txti.setText(null);
             txti.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txtiKeyReleased
 
     private void txtt2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtt2KeyReleased
         //Verificar se o usuariio digiou a letra T2
-        if(txtt2.getText().equals("T2")){
-            
+        if(txtt2.getText().equals("T")){
+
             //Muda cor de fundo da caixa de texto
             txtt2.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txta.setVisible(true);
             txta.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txtt2.setBackground(Color.RED);
             txtt2.setText(null);
             txtt2.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txtt2KeyReleased
 
     private void txtaKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtaKeyReleased
         //Verificar se o usuariio digiou a letra A
         if(txta.getText().equals("A")){
-            
+
             //Muda cor de fundo da caixa de texto
             txta.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txtn.setVisible(true);
             txtn.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txta.setBackground(Color.RED);
             txta.setText(null);
             txta.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txtaKeyReleased
 
     private void txtnKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtnKeyReleased
         //Verificar se o usuariio digiou a letra N
         if(txtn.getText().equals("N")){
-            
+
             //Muda cor de fundo da caixa de texto
             txtn.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txti2.setVisible(true);
             txti2.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txtn.setBackground(Color.RED);
             txtn.setText(null);
             txtn.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txtnKeyReleased
 
     private void txti2KeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txti2KeyReleased
         //Verificar se o usuariio digiou a letra I2
-        if(txti2.getText().equals("I2")){
-            
+        if(txti2.getText().equals("I")){
+
             //Muda cor de fundo da caixa de texto
             txti2.setBackground(Color.GREEN);
-            
+
             //Exibe o segundo campo de texto
             txtc.setVisible(true);
             txtc.requestFocus();
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txti2.setBackground(Color.RED);
             txti2.setText(null);
             txti2.requestFocus();
-            
+
         }
     }//GEN-LAST:event_txti2KeyReleased
 
     private void txtcKeyReleased(java.awt.event.KeyEvent evt) {//GEN-FIRST:event_txtcKeyReleased
-         //Verificar se o usuariio digiou a letra C
+        //Verificar se o usuariio digiou a letra C
         if(txtc.getText().equals("C")){
-            
+
             //Muda cor de fundo da caixa de texto
             txtc.setBackground(Color.GREEN);
-            
+
             //Calcula Ponto
             pontos += 10;
-            
+
             //Mostra os pontos
             lblpontos.setText(String.valueOf(pontos));
-            
+
             //Botão que chama a proxima tela
             btnp.setVisible(true);
-            
+
             JOptionPane.showMessageDialog(null, "Parabénsss, você acertou o nome do filme!! :)");
-           
+
         }
         else{
             //Muda cor de fundo da caixa de texto
             txtc.setBackground(Color.RED);
             txtc.setText(null);
             txtc.requestFocus();
-            
 
-            
         }
     }//GEN-LAST:event_txtcKeyReleased
 
+    private void btnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpActionPerformed
+        Telafilme10 tela10 = new Telafilme10();
+        tela10.setVisible(true);
+    }//GEN-LAST:event_btnpActionPerformed
+
     private void formWindowOpened(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowOpened
-       //Esconder os Campos de Texto
+        //Esconder os Campos de Texto
       txti.setVisible(false);
       txtt2.setVisible(false);
       txta.setVisible(false);
@@ -435,11 +447,6 @@ public class Telafilme09 extends javax.swing.JFrame {
       txtc.setVisible(false);
       btnp.setVisible(false);
     }//GEN-LAST:event_formWindowOpened
-
-    private void btnpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnpActionPerformed
-        Telafilme10 tela10 = new Telafilme10();
-        tela10.setVisible(true);
-    }//GEN-LAST:event_btnpActionPerformed
 
     /**
      * @param args the command line arguments
@@ -461,7 +468,8 @@ public class Telafilme09 extends javax.swing.JFrame {
             java.util.logging.Logger.getLogger(Telafilme09.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (InstantiationException ex) {
             java.util.logging.Logger.getLogger(Telafilme09.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
-        } catch (IllegalAccessException etxtta.util.logging.Logger.getLogger(Telafilme09.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+        } catch (IllegalAccessException ex) {
+            java.util.logging.Logger.getLogger(Telafilme09.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(Telafilme09.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
